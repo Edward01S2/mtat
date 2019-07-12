@@ -1,0 +1,42 @@
+.nav-primary {
+  @apply text-center pb-12;
+  li {
+    @apply py-4
+  }
+  a {
+    @apply text-lg text-white uppercase
+  }
+}
+
+.justify-end-i {
+  @apply justify-end #{!important};
+}
+
+.nav-click {
+  @apply bg-mtat-blue #{!important};
+  #nav-pos {
+    @apply justify-end border-t border-white #{!important};
+  }
+  #main-nav {
+    @apply block #{!important};
+  }
+  #nav-toggle {
+    @apply text-white #{!important};
+  }
+}
+
+.banner-bar {
+  p {
+    @apply mb-0 text-white
+  }
+  a {
+    @apply text-mtat-orange
+  }
+}
+
+.nav-main {
+  @apply flex justify-end;
+  a {
+    @apply px-4 text-mtat-blue uppercase text-sm font-semibold;
+  }
+}

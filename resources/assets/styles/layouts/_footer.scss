@@ -1,0 +1,23 @@
+.nav-footer {
+  @apply flex flex-wrap justify-between leading-loose;
+  a {
+    @apply text-mtat-yellow underline font-semibold;
+  }
+}
+
+@screen md {
+  .nav-footer {
+    @apply justify-start;
+    a {
+      @apply text-sm pr-6;
+    }
+  }
+}
+
+@screen lg {
+  .nav-footer {
+    a {
+      @apply pr-12;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+#program-img:nth-child(-n+3) {
+  @apply border-b-2 border-white;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	
+	margin: 0;
+	padding: 1rem 0;
+	
+	list-style-type: none;
+	
+		li {
+			margin: 0 0.5rem !important;
+		}
+	
+		button {
+			display: block;
+			width: 8px !important;
+			height: 8px !important;
+			padding: 0 !important;
+			
+      border: 1px solid !important;
+      @apply border-mtat-darkgreen;
+			border-radius: 100%;
+			// background-color: blue !important;
+			
+			text-indent: -9999px;
+		}
+	
+		li.slick-active button {
+			@apply bg-mtat-darkgreen;
+		}
+	
+}
+
+#testimony-slider .slick-dots, #announce-slider .slick-dots {
+  button {
+    @apply border-white;
+  }
+  li.slick-active button {
+    @apply bg-white;
+  }
+}
+
+@screen md {
+
+  #hero {
+    background-position: 25% 25%;
+  }
+
+  #program-img:nth-child(-n+3) {
+    @apply border-r-2 border-white border-b-0;
+  }
+}
+ 
