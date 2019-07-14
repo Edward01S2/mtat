@@ -18,3 +18,10 @@ p {
 a {
   @apply cursor-pointer;
 }
+
+button {
+  @apply outline-none;
+  &:focus {
+    @apply outline-none;
+  }
+}

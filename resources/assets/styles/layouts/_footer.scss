@@ -1,7 +1,7 @@
 .nav-footer {
   @apply flex flex-wrap justify-between leading-loose;
   a {
-    @apply text-mtat-yellow underline font-semibold;
+    @apply text-mtat-yellow underline text-sm font-semibold;
   }
 }
 

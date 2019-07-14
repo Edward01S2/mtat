@@ -51,4 +51,13 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public static function featImage() {
+        if(has_post_thumbnail()) {
+            return get_the_post_thumbnail_url();
+        }
+        else {
+            return false;
+        }
+    }
 }

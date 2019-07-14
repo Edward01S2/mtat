@@ -17,10 +17,10 @@
       </div>
   </div>
 
-  <nav id="nav-pos" class="container mx-auto flex items-center flex-wrap py-2 justify-between">
-      <div id="nav-brand" class="flex items-center flex-shrink-0 pl-4">
+  <nav id="nav-pos" class="container mx-auto flex items-center flex-wrap py-2 justify-between lg:py-4">
+      <div id="nav-brand" class="flex items-center flex-shrink-0 pl-4 xl:pl-0 ">
           <a class="brand" href="{{ home_url('/') }}">
-            <img class="h-12" src="{{$acf_options->logo->url}}" alt="">  
+            <img class="h-12 md:h-16" src="{{$acf_options->logo->url}}" alt="">  
           </a>
       </div>
       <div class="block pr-4 lg:hidden">
@@ -49,7 +49,7 @@
     </nav>
 
     @foreach($banner_loop as $banner)
-      <div class="text-center text-white text-sm py-3 px-4 bg-mtat-ltpurple flex items-center justify-between md:ml-auto">
+      <div class="text-center text-white text-sm py-3 px-4 bg-mtat-ltpurple flex items-center justify-between md:ml-auto hidden">
         <div class="banner-bar mx-auto">
           {!! $banner['banner'] !!}
         </div>

@@ -13,6 +13,7 @@ module.exports = {
 
       mtat: {
         ltblue: '#B1E2F9',
+        bbblue: '#00ADD2',
         blue: '#005686',
         green: '#9DCEC2',
         darkgreen: '#015D66',
@@ -154,6 +155,7 @@ module.exports = {
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
+      '28': '7rem',
       '32': '8rem',
       '40': '10rem',
       '48': '12rem',
@@ -373,6 +375,7 @@ module.exports = {
     opacity: {
       '0': '0',
       '25': '0.25',
+      '30': '0.3',
       '50': '0.5',
       '75': '0.75',
       '100': '1',

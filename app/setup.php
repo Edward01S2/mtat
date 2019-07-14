@@ -101,6 +101,7 @@ add_action('the_post', function ($post) {
     sage('blade')->share('post', $post);
 });
 
+
 /**
  * Setup Sage options
  */

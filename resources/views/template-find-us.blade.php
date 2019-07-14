@@ -1,5 +1,5 @@
 {{--
-  Template Name: Custom Template
+  Template Name: Find Us Template
 --}}
 
 @extends('layouts.app')

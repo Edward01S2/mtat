@@ -1,0 +1,37 @@
+.page-content {
+  @apply p-8;
+  h2, h3, h4, h5, h6 {
+    @apply text-mtat-orange;
+  }
+  p {
+    @apply text-gray-700 leading-loose pb-8;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  a {
+    @apply text-mtat-orange underline;
+  }
+}
+
+.class-dd {
+  p {
+    @apply leading-loose text-base;
+  }
+  a {
+    @apply text-mtat-orange underline;
+  }
+}
+
+@screen md {
+
+.page-content {
+  @apply
+} 
+
+#page-header-bg {
+  background-position: 50% 35%;
+}
+
+}
+ 
