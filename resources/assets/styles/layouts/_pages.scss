@@ -23,6 +23,96 @@
   }
 }
 
+.test-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @apply mb-8;
+}
+
+.test-compare {
+  @apply pl-6;
+}
+
+/* Hide the browser's default checkbox */
+.test-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: white;
+  @apply border-2 border-mtat-blue rounded;
+}
+
+.test-compare .checkmark {
+  height: 16px;
+  width: 16px;
+  top: 6px;
+}
+
+/* On mouse-over, add a grey background color */
+.test-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.ctest-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.test-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.test-checkbox .checkmark:after {
+  left: 4px;
+  top: 0px;
+  width: 10px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(33deg);
+  @apply border-mtat-orange;
+}
+
+.test-compare .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+}
+
+.loc-details {
+  div:nth-child(2) {
+    @apply items-center;
+  }
+}
+
 @screen md {
 
 .page-content {
@@ -32,6 +122,20 @@
 #page-header-bg {
   background-position: 50% 35%;
 }
+
+.test-checkbox {
+  @apply mb-4;
+}
+
+}
+
+@screen lg {
+
+  #test-location {
+    &:first-child {
+      @apply border-t-2;
+    }
+  }
 
 }
  

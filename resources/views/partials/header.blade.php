@@ -1,4 +1,4 @@
-<header id="nav-click" class="banner bg-white fixed w-full z-30">
+<header id="nav-click" class="banner bg-white fixed w-full z-30 shadow shadow-md">
 
   <div class="bg-mtat-blue">
       <div class="container mx-auto flex justify-center text-white tracking-wide py-2 md:justify-end">

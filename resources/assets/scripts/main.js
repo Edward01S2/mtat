@@ -1,6 +1,8 @@
 // import external dependencies
 import 'jquery';
-import 'slick-carousel/slick/slick.min'
+import 'slick-carousel/slick/slick.min';
+import 'jquery-ui/ui/widgets/datepicker';
+import 'isotope-layout/dist/isotope.pkgd.min';
 
 // Import everything from autoload
 import './autoload/**/*'
@@ -12,6 +14,8 @@ import home from './routes/home';
 import aboutUs from './routes/about';
 import findUs from './routes/findus';
 import programs from './routes/programs';
+import pageTemplateTemplateTesting from './routes/pageTemplateTesting';
+
 
 
 
@@ -25,6 +29,7 @@ const routes = new Router({
   aboutUs,
   findUs,
   programs,
+  pageTemplateTemplateTesting,
 });
 
 // Load Events

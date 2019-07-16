@@ -37,6 +37,7 @@
 
 // Import slick
 @import "~slick-carousel/slick/slick.scss";
+@import "~jquery-ui/themes/base/datepicker.css";
 //@import "~slick-carousel/slick/slick-theme.scss";
 
 /** Import theme styles */
@@ -45,6 +46,7 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
+@import "components/jquery-theme";
 @import "layouts/homepage";
 @import "layouts/header";
 @import "layouts/sidebar";

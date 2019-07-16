@@ -5,14 +5,13 @@
     </div>
 
     <div class="border-t-2 border-mtat-ltblue md:border-2 md:border-b-0 md:max-w-xl md:mx-auto">
-      {{-- @foreach($class->classes as $class) --}}
-      @for($i=0; $i < count($classes); $i++)
+      @foreach($class->classes as $class)
       <div class="text-gray-700 text-sm border-b-2 border-mtat-ltblue">
         <div class="">
           <div class="px-8 py-8 md:flex md:items-center md:justify-between">
             <div class="flex items-center justify-between md:w-full">
               <div class="text-left xl:text-base">
-                <h3 class="text-mtat-blue text-base font-semibold tracking-wider mb-0 md:text-lg xl:pb-2">{{$classes[$i]->title}}</h3>
+                <h3 class="text-mtat-blue text-base font-semibold tracking-wider mb-0 md:text-lg xl:pb-2">{{$class->title}}</h3>
               </div>
               <button id="loc-dd" class="accordion">
                   <svg id="loc-up" class="h-6 w-6 fill-current text-mtat-orange" xmlns="http://www.w3.org/2000/svg" height="1" width="1" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -22,16 +21,15 @@
           </div>
 
             {{-- Mobile dropdown --}}
-            <div id="loc-open" class="accordion-content border-t-2 border-mtat-ltblue hidden relative">
+            <div id="loc-open" class="accordion-content hidden relative">
               <div class="h-full w-full absolute bg-mtat-ltblue opacity-30 z-0"></div>
               <div class="class-dd py-8 px-8 relative z-20">
-                  {!!$classes[$i]->content !!}
+                  {!!$class->content !!}
               </div>
             </div>
           </div>
         </div>
-        @endfor
-        {{-- @endforeach --}}
+        @endforeach
     </div>
 
 </section>
