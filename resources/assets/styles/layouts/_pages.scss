@@ -131,10 +131,16 @@
 
 @screen lg {
 
-  #test-location {
-    &:first-child {
-      @apply border-t-2;
-    }
+  // #test-location {
+  //   &:first-child {
+  //     @apply border-t-2;
+  //   }
+  // }
+  .outline-blue {
+    outline: 2px solid;
+    outline-color: #B1E2F9;
+    margin-top: 2px;
+    margin-left: 2px;
   }
 
 }
