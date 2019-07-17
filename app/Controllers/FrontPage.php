@@ -30,18 +30,17 @@ class FrontPage extends Controller
 
   public function announcementLoop() {
     $announce = get_posts([
-      'post_type' => 'announcements',
+      'category_name' => 'announcements',
+      'order' => 'DESC',
       'posts_per_page'=>'3',
-      'order'=> 'DESC',
     ]);
 
     return array_map(function ($post) {
-      return [
-          'title' => get_the_title($post->ID),
-          'content' => get_field('content', $post->ID),
-          'link' => get_field("link", $post->ID),
-          
-      ];
-  }, $announce);
+        return [
+          'name' => get_the_title($post->ID),
+          'excerpt' => get_the_excerpt($post->ID),
+          'url' => get_permalink($post->ID),
+        ];
+    }, $announce);
   }
 }

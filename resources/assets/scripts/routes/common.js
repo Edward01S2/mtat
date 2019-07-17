@@ -11,6 +11,14 @@ export default {
       // $("#nav-color").toggleClass("bg-blue-700");
     });
 
+    $('.nav-main li').hover(function() {
+      $(this).children('.sub-menu').show();
+    }, function() {
+      $(this).children('.sub-menu').hide();
+    });
+
+    $('.menu-item-has-children').has('ul').addClass('parentul');
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

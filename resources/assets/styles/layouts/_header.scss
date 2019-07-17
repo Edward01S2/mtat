@@ -1,10 +1,11 @@
 .nav-primary {
-  @apply text-center pb-12;
+  height: 75vh;
+  @apply text-center pb-12 overflow-scroll;
   li {
     @apply py-4
   }
   a {
-    @apply text-lg text-white uppercase
+    @apply text-xl text-white font-semibold tracking-wide uppercase
   }
 }
 
@@ -35,5 +36,37 @@
   @apply flex justify-end;
   a {
     @apply px-4 text-mtat-blue uppercase text-sm font-semibold;
+  }
+}
+
+@screen lg {
+  .nav-main {
+    a {
+      @apply text-lg;
+    }
+  }
+}
+
+.sub-menu {
+  @apply ;
+  li {
+    @apply py-3 px-4 w-full h-full;
+  }
+  a {
+    @apply w-full h-full block text-sm tracking-wider uppercase font-light;
+  }
+}
+
+@screen md {
+  .sub-menu {
+    @apply hidden absolute bg-white bg-white shadow-2xl shadow-lg border-l-4 border-mtat-blue ml-4;
+    li {
+      &:hover {
+        @apply bg-gray-200;
+      }
+    }
+    a {
+      @apply font-medium;
+    }
   }
 }

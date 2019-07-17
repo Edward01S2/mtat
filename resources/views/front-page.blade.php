@@ -25,15 +25,15 @@
             </div>
           </div>
       <div class="relative">
-        <div class="absolute bg-mtat-orange opacity-50 w-full h-full z-0 md:hidden"></div>
+        <div class="absolute bg-mtat-orange opacity-75 lg:opacity-50 w-full h-full z-0 md:hidden"></div>
         <div class="relative text-white md:py-16 lg:py-24 xl:py-40 xl:pl-12">
           <div class="relative z-10 p-4 pt-6 text-center text-white lg:pb-8">
-            <h2 class="uppercase font-semibold tracking-wider text-base md:text-xl xl:text-2xl">{{ $hero->header}}</h2>
+            <h2 class="uppercase font-semibold tracking-wider text-lg md:text-xl xl:text-2xl">{{ $hero->header}}</h2>
             <p class="text-sm leading-loose lg:px-16 xl:px-24 xl:text-base">{{ $hero->subtext}}</p>
           </div>
           <div class="relative flex justify-center text-white tracking-widest font-thin pb-6">
             @foreach($hero->buttons as $button)
-              <a class="border-2 border-white px-4 py-2 mx-2" href="{{$button->link}}">{{$button->text}}</a>
+              <a class="border-2 border-white px-4 py-2 mx-2 font-medium hover:bg-white hover:text-mtat-orange" href="{{$button->link}}">{{$button->text}}</a>
             @endforeach
           </div>
         </div>
@@ -54,19 +54,19 @@
   <section id="commitment">
     <div class="bg-mtat-green pt-8 px-8 pb-4 ">
       <div class="container mx-auto text-center text-mtat-darkgreen">
-        <h3 class="uppercase text-3xl font-medium tracking-wide">{!! $commitment->header!!}</h3>
+        <h3 class="text-mtat-darkgreen text-3xl uppercase font-semibold tracking-wide pb-4 px-4 md:px-0">{!! $commitment->header!!}</h3>
         <div id="commit-item" class="mb-8 md:flex md:flex-wrap md:justify-center md:mb-12">
           @foreach($commitment->items as $item)
             <div class="flex flex-col items-center pt-4 md:px-4 md:w-1/3 lg:w-1/5">
               <div class="pb-4">
                 <img class="h-32 w-32 mx-auto xl:h-40 xl:w-40" src="{{$item->image->url}}" />
               </div>
-              <p class="text-lg px-24 normal-case md:px-0">{{ $item->subtitle}}</p>
+              <p class="text-lg px-24 normal-case font-semibold pb-4 md:px-0">{{ $item->subtitle}}</p>
             </div>
           @endforeach
         </div>
         <div class="pb-12">
-          <a class="border border-mtat-darkgreen px-8 py-3 uppercase text-base" href="{{$commitment->button_link->url}}">{{$commitment->button_text}}</a>
+          <a class="border-2 border-mtat-darkgreen px-8 py-3 font-medium uppercase text-base hover:bg-mtat-darkgreen hover:text-white" href="{{$commitment->button_link->url}}">{{$commitment->button_text}}</a>
         </div>
         <div class="append-dots relative block"></div>
       </div>
@@ -105,10 +105,10 @@
           <div id="announce-slider" class="mb-8 md:flex">
             @foreach($announcement_loop as $item)
               <div class="flex flex-col text-left p-8 md:w-1/3 md:px-4 lg:px-8">
-                <h4 class="text-mtat-orange text-2xl md:text-xl">{{ $item['title'] }}</h4>
-                <p class="normal-case pb-12 leading-loose text-base md:text-sm">{{ $item['content']}}</p>
+                <h4 class="text-mtat-orange text-2xl md:text-xl">{{ $item['name'] }}</h4>
+                <p class="normal-case pb-12 leading-loose text-base md:text-sm">{{ $item['excerpt']}}</p>
                 <div class="text-center lg:text-left">
-                  <a class="border border-white px-8 py-3 uppercase text-sm" href="{{$item['link']['url']}}">Learn More</a>
+                  <a class="border-2 border-white px-8 py-3 uppercase text-sm font-medium hover:bg-white hover:text-mtat-purple" href="{{$item['url']}}">Learn More</a>
                 </div>
               </div>
             @endforeach
@@ -124,7 +124,7 @@
       <div class="flex justify-between md:justify-center">
         @foreach($new_student->buttons as $item)
           <div class="md:px-4">
-            <a class="border-2 border-mtat-blue px-6 py-3 uppercase text-base text-mtat-blue" href="{{$item->link->url}}">{{$item->button_text}}</a>
+            <a class="border-2 border-mtat-blue px-6 py-3 uppercase text-base text-mtat-blue font-medium hover:bg-mtat-blue hover:text-white" href="{{$item->link->url}}">{{$item->button_text}}</a>
           </div>
         @endforeach
       </div>

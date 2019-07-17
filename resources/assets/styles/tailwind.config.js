@@ -243,6 +243,7 @@ module.exports = {
         'Optical',
       ],
       sans: [
+        'Avenir',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
@@ -302,6 +303,7 @@ module.exports = {
       auto: 'auto',
       ...theme('spacing'),
       full: '100%',
+      threequarter: '75%',
       screen: '100vh',
     }),
     inset: {
@@ -470,7 +472,7 @@ module.exports = {
     flexWrap: ['responsive'],
     float: ['responsive'],
     fontFamily: ['responsive'],
-    fontSize: ['responsive'],
+    fontSize: ['responsive', 'hover'],
     fontSmoothing: ['responsive'],
     fontStyle: ['responsive'],
     fontWeight: ['responsive', 'hover', 'focus'],

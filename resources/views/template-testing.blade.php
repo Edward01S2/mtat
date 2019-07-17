@@ -9,6 +9,12 @@
 
   @include('partials.page-header')
 
+  <div class="page-content">
+    <div class="container mx-auto">
+        @php the_content() @endphp
+    </div>
+  </div>
+
   @include('partials.classes')
     
   <div class="container mx-auto flex justify-center py-8 md:justify-end md:px-4 lg:px-4 xl:px-0">
@@ -221,8 +227,8 @@
   </div>
 
   </div>
-  @debug()
-  @dump($test_data)
+  {{-- @debug()
+  @dump($test_data) --}}
     {{-- @include('partials.content-page') --}}
   @endwhile
 @endsection

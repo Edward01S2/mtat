@@ -6,9 +6,7 @@
     {{-- @include('partials.content-page') --}}
     <div class="page-content">
       <div class="container mx-auto">
-        <div class="text-center lg:max-w-3xl mx-auto pt-4">
-            @php the_content() @endphp
-        </div>
+          @php the_content() @endphp
       </div>
     </div>
     
